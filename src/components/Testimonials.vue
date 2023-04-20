@@ -3,7 +3,7 @@
     <div class="flip-card" v-for="testimonial in testimonials" :key="testimonial">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img :src="testimonial.image" alt="Avatar" style="width:300px;height:330px;">
+            <img :src="testimonial.image" alt="Avatar" style="width:300px;height:330px; object-fit:cover">
           </div>
           <div class="flip-card-back">
             <h1>{{ testimonial.name }}</h1> 
@@ -120,5 +120,5 @@ comment:"Uzukhanye is a grounded and loving individual who easily adapts to chan
     overflow-y: auto;
     font-weight: bold;
   }
-  
+ 
 </style>
